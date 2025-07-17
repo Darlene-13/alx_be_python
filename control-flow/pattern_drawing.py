@@ -6,4 +6,4 @@ while input >0:
     for i in range(input):
         print("*" * (i+1))
         input -=1
-    print("\n")
+    print("*", end="")
