@@ -4,4 +4,5 @@ print(f"Multiplication table for {number} is:")
 
 for i in range (1,11):
     result = int(number) * i
-    print(f"{number} x {i} = {result}")
+    print(f"{number} * {i} = {result}")
+
