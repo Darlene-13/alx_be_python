@@ -1,25 +1,25 @@
 # Enter your daily task and its priority level
-task = input('What is your task for today?')
-priority = input('What is the priority level of thsis task? (high/medium/low): ').lower()
-time_bound = input('Is this task time-bound? (yes/no?)')
+Task = input('What is your task for today?')
+Priority = input('What is the priority level of thsis task? (high/medium/low): ').lower()
+Time_bound = input('Is this task time-bound? (yes/no?)')
 
 # Match case to react based on priority level
-match priority:
+match Priority:
 
     case 'high':
-        if time_bound == 'yes':
-            print(f"Your task {task} is of high priority and it is time-bound. Make sure to complete it first.")
+        if Time_bound == 'yes':
+            print(f"Your task {Task} is of high priority and it is time-bound. Make sure to complete it first.")
         else:
-            print(f" Your task {task} is of high priority. Make sure to complete it first.")
+            print(f" Your task {Task} is of high priority. Make sure to complete it first.")
     case 'medium':
-        if time_bound == 'yes':
-            print(f"Your task {task} is of medium priority and it is time-bound. You can complete it after high priority tasks.")
+        if Time_bound == 'yes':
+            print(f"Your task {Task} is of medium priority and it is time-bound. You can complete it after high priority tasks.")
         else:
-            print(f"Your task {task} is of medium priority. You can complete it after high priority tasks.")
+            print(f"Your task {Task} is of medium priority. You can complete it after high priority tasks.")
     case 'low':
-        if time_bound =='yes':
+        if Time_bound =='yes':
             print("However, since it is time-bound, make sure to complete it on time.")
         else:
-            print(f" Your task {task} is of low priority. You can complete it later.")
+            print(f" Your task {Task} is of low priority. You can complete it later.")
     case _:
         print('Invalid priority level.Please enter high, medium or low.')
