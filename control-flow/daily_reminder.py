@@ -1,25 +1,22 @@
-# Enter your daily task and its priority level
-Task = input('What is your task for today?')
-Priority = input('What is the priority level of thsis task? (high/medium/low): ').lower()
-Time_bound = input('Is this task time-bound? (yes/no?)')
+task = input("Enter your task: ")
+priority = input("Priority (high/medium/low): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-# Match case to react based on priority level
-match Priority:
-
-    case 'high':
-        if Time_bound == 'yes':
-            print(f"Your task {Task} is of high priority and it is time-bound. Make sure to complete it first.")
+match priority:
+    case "high":
+        if time_bound == "yes":
+            print(f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
         else:
-            print(f" Your task {Task} is of high priority. Make sure to complete it first.")
-    case 'medium':
-        if Time_bound == 'yes':
-            print(f"Your task {Task} is of medium priority and it is time-bound. You can complete it after high priority tasks.")
+            print(f"Reminder: '{task}' is a high priority task. Try to work on it as soon as possible.")
+    case "medium":
+        if time_bound == "yes":
+            print(f"Reminder: '{task}' is a medium priority task that requires attention today.")
         else:
-            print(f"Your task {Task} is of medium priority. You can complete it after high priority tasks.")
-    case 'low':
-        if Time_bound =='yes':
-            print("However, since it is time-bound, make sure to complete it on time.")
+            print(f"Note: '{task}' is a medium priority task. Fit it into your schedule soon.")
+    case "low":
+        if time_bound == "yes":
+            print(f"Reminder: '{task}' is a low priority task that is still time-bound. Don’t forget to finish it today!")
         else:
-            print(f" Your task {Task} is of low priority. You can complete it later.")
+            print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
     case _:
-        print('Invalid priority level.Please enter high, medium or low.')
+        print("Invalid priority entered. Please enter high, medium, or low.")
