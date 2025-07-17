@@ -1,5 +1,4 @@
-weather_conditions = ["sunny", "rainy", "cold"]
-
+# Prompting user for their input about the weather and providing advice based on their response
 user_input = input("What is the weather like today?").lower()
 
 if user_input == "sunny":
