@@ -2,9 +2,9 @@
 
 num1 = input("Enter the first number:")
 num2 = input("Enter the second number:")
-operation = input("Choose the operation +, -, *, /:").strip()
+choose_the_operation = input("Choose the operation +, -, *, /:").strip()
 
-match operation:
+match choose_the_operation:
     case "+":
         result = float(num1) + float(num2)
         print(f" The result of {num1} + {num2} is {result}")
