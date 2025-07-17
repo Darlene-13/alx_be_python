@@ -2,6 +2,7 @@
 
 num1 = input("Enter the first number:")
 num2 = input("Enter the second number:")
+operation = input("Choose the operation (+, -, *, /): ").strip()
 input = input("Choose the operation +, -, *, /:")
 
 match input:
@@ -20,3 +21,5 @@ match input:
             print(f"The result of {num1} / {num2} is {result}")
         else:
             print("A number can't be divided by zero, Please enter the correct number.")
+    case _:
+        print("Invalid operation. Please choose from +, -, *, /.")
