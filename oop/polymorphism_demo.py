@@ -1,7 +1,4 @@
 import math
-
-from sympy import shape
-
 class Shape:
     def area(self):
         pass
